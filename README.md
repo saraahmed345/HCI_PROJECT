@@ -27,40 +27,9 @@ The dataset used in this project is assumed to be in CSV format and located at:
 BCICIV_2a_44.csv
 The CSV file should contain EEG signal data with columns corresponding to signal features and a 'label' column indicating the class ('left' or 'right').
 
-Code Walkthrough
-Preprocessing Parameters: Defines parameters for bandpass filtering and correlation threshold for feature selection.
 
-Butterworth Bandpass Filter: Implements a function to design and apply a bandpass filter to the data.
 
-Load and Prepare Data:
 
-Loads the dataset from the specified file path.
-Filters relevant labels and encodes them using LabelEncoder.
-Computes the correlation matrix and removes features with low correlation to the labels.
-Applies bandpass filtering to the data.
-Data Splitting:
-
-Splits the data into training and testing sets using stratified sampling.
-Feature Extraction:
-
-Initializes and applies CSP to extract features from the EEG signals.
-Classifier Initialization and Training:
-
-Initializes Gaussian Naive Bayes and SVM classifiers.
-Performs hyperparameter tuning for SVM using GridSearchCV.
-Trains both classifiers on the CSP-transformed data.
-Evaluation:
-
-Evaluates the performance of the classifiers using classification reports and confusion matrices.
-Model Saving:
-
-Saves the best SVM model to a file using pickle.
-Running the Code
-Ensure all dependencies are installed.
-
-Place your dataset in the specified location.
-
-Update the file_path variable with the correct path to your CSV file if necessary.
 
 Run the script using Python:
 
