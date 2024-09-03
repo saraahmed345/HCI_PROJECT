@@ -42,8 +42,7 @@ Outputs
 Classification Reports: Printed for both Gaussian Naive Bayes and SVM classifiers, showing precision, recall, and F1-score.
 Confusion Matrices: Printed for both classifiers to visualize the classification performance.
 Model File: The best SVM model is saved as best_svm_model.pkl.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
 
 Acknowledgments
 Common Spatial Patterns (CSP) for feature extraction.
